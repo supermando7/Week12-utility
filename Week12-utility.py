@@ -34,11 +34,23 @@ def ScoreFinder(players, scores, targetName):
         index += 1
     PrintOutput("player not found")
 
+def Union(lst1, lst2):
+    bigList = lst1 + lst2
+    #removes duplicates
+    bigUnique = []
+    for element in bigList:
+        if element not in bigUnique:
+            bigUnique.append(element)
+    return bigUnique
+
+#TESTS
 #PrintOutput(LoadFile("../sample_file.txt"))
 #UpdateString("Hello World", "a", 3)
 #a = LoadFile("../sample_file.txt")
 #PrintOutput(str(FindWordCount(a, "How")))
 #players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
-#scores = [5, 8, 10, 6, 10, 4]
+scores = [5, 8, 10, 6, 10, 4]
 #ScoreFinder(players, scores, "jill")
 #ScoreFinder(players, scores, "Manuel")
+players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+PrintOutput(Union(scores, players2))
