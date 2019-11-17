@@ -14,7 +14,18 @@ def UpdateString(str1, str2, index):
     finalStr = ""
     for chars in listStr:
         finalStr += chars
-    print(finalStr)
+    PrintOutput(finalStr)
+
+def FindWordCount(lst, s):
+    counter = 0
+    for line in lst:
+        line = line.split(" ")
+        for word in line:
+            if word == s:
+                counter += 1
+    return counter
 
 #PrintOutput(LoadFile("../sample_file.txt"))
-UpdateString("Hello World", "a", 3)
+#UpdateString("Hello World", "a", 3)
+#a = LoadFile("../sample_file.txt")
+#PrintOutput(str(FindWordCount(a, "How")))
