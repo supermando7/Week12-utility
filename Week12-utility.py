@@ -1,3 +1,7 @@
+# Armando Ocampo
+#​CSCI 102 – Section B
+# Week 12 - Part A
+
 def PrintOutput(string):
     print("OUTPUT", string)
     
@@ -50,6 +54,13 @@ def Intersection(lst1, lst2):
             intersection.append(element)
     return(intersection)
 
+def NotIn(lst1, lst2):
+    notin = []
+    for element in lst1:
+        if element not in lst2:
+            notin.append(element)
+    return(notin)
+
 #TESTS
 #PrintOutput(LoadFile("../sample_file.txt"))
 #UpdateString("Hello World", "a", 3)
@@ -62,3 +73,4 @@ def Intersection(lst1, lst2):
 #players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
 #PrintOutput(Union(scores, players2))
 #PrintOutput(Intersection(players, players2))
+#PrintOutput(NotIn(players2, players))
