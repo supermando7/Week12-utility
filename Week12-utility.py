@@ -43,14 +43,22 @@ def Union(lst1, lst2):
             bigUnique.append(element)
     return bigUnique
 
+def Intersection(lst1, lst2):
+    intersection = []
+    for element in lst1:
+        if element in lst2:
+            intersection.append(element)
+    return(intersection)
+
 #TESTS
 #PrintOutput(LoadFile("../sample_file.txt"))
 #UpdateString("Hello World", "a", 3)
 #a = LoadFile("../sample_file.txt")
 #PrintOutput(str(FindWordCount(a, "How")))
 #players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
-scores = [5, 8, 10, 6, 10, 4]
+#scores = [5, 8, 10, 6, 10, 4]
 #ScoreFinder(players, scores, "jill")
 #ScoreFinder(players, scores, "Manuel")
-players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
-PrintOutput(Union(scores, players2))
+#players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+#PrintOutput(Union(scores, players2))
+#PrintOutput(Intersection(players, players2))
