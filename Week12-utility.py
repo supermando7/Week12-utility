@@ -1,6 +1,7 @@
+# GitHub Repo: "https://github.com/supermando7/Week12-utility.git" 
 # Armando Ocampo
-#​CSCI 102 – Section B
-# Week 12 - Part A
+# CSCI 102 – Section B
+# Week 12 - Part B
 
 def PrintOutput(string):
     print("OUTPUT", string)
